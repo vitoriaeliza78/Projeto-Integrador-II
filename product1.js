@@ -25,3 +25,7 @@ function mostrar(pergunta) {
   }
 }
 
+function adicionarAoCarrinhoLateral(nomeProduto, imgProduto){
+  let lista = document.getElementById('sideBar')
+}
+
