@@ -240,7 +240,16 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
     cursor: pointer;
 }
 
+#iten-carrinho{
+    display: flex;
+    align-items: center;
+    gap: 1px solid #ccc;
+    padding: 8px 0;
+}
 
+#iten-carrinho img{
+    
+}
 /*FINAL DO HEADER*/
 
 /*INICIO COMPRA SEGURA*/
