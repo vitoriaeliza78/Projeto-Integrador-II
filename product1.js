@@ -28,7 +28,7 @@ function mostrar(pergunta) {
 function COMPRAR(){
   let nome = document.getElementById("produto-card").textContent;
 
-  let imagem = document.getElementById("img-produto").scr;
+  let imagem = document.querySelector(".card #img-produto").scr;
 
   let preco = document.getElementById("preco-card").textContent;
 
@@ -43,14 +43,16 @@ function adicionarAoCarrinhoLateral(nome, imagem, preco){
 
   let img = document.createElement("img")
   img.src = imagem;
-  img.alt = nome;
 
-  let texto = document.createElement("div");
-  texto.classList.add("texto-item");
-  texto.innerHTML = `<strong>${nome}</strong><br><span>${preco}</span>`;
+  let nome = document.createElement("p")
+  nome.textContent = nome;
+
+  let preco = document.createElement("p");
+
 
   item.appendChild(img);
-  item.appendChild(texto);
+  item.appendChild(nome);
+  item.appendChild(preco)
 
   container.appendChild(item);
 }
