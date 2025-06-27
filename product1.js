@@ -48,7 +48,7 @@ function adicionarAoCarrinhoLateral(nome, imagem, preco){
   nome.textContent = nome;
 
   let preco = document.createElement("p");
-
+  preco.textContent = texto;
 
   item.appendChild(img);
   item.appendChild(nome);
