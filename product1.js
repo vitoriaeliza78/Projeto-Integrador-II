@@ -25,35 +25,5 @@ function mostrar(pergunta) {
   }
 }
 
-function COMPRAR(){
-  let nome = document.getElementById("produto-card").textContent;
 
-  let imagem = document.querySelector(".card #img-produto").scr;
-
-  let preco = document.getElementById("preco-card").textContent;
-
-  adicionarAoCarrinhoLateral(nome, imagem, preco);
-}
-
-function adicionarAoCarrinhoLateral(nome, imagem, preco){
-  let container = document.getElementById("iten-carrinho");
-
-  let item = document.createElement("div");
-  item.classList.add("iten-lateral");
-
-  let img = document.createElement("img")
-  img.src = imagem;
-
-  let nome = document.createElement("p")
-  nome.textContent = nome;
-
-  let preco = document.createElement("p");
-
-
-  item.appendChild(img);
-  item.appendChild(nome);
-  item.appendChild(preco)
-
-  container.appendChild(item);
-}
 
