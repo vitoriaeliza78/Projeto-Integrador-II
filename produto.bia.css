@@ -27,7 +27,6 @@ body {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
   justify-content: space-around;
   width: 100%;
 }

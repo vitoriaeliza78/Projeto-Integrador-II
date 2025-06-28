@@ -149,7 +149,6 @@ a.item-a{
 }
 
 #cart-icon{
-    position: relative;
     display: flex;
     cursor: pointer;
 }
@@ -189,8 +188,8 @@ a.item-a{
 
 #sideBar .car-head{
     display: flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .car-head #lat-car{
@@ -228,6 +227,7 @@ button.btn-carrinho{
     color: #fff;
     font-family: var(--font_poppins);
     font-weight: 700;
+    display: none;
 }
 
 

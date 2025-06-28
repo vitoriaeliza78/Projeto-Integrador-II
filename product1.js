@@ -34,26 +34,3 @@ function COMPRAR(){
 
   adicionarAoCarrinhoLateral(nome, imagem, preco);
 }
-
-function adicionarAoCarrinhoLateral(nome, imagem, preco){
-  let container = document.getElementById("iten-carrinho");
-
-  let item = document.createElement("div");
-  item.classList.add("iten-lateral");
-
-  let imagem = document.createElement("img")
-  img.src = imagem;
-
-  let nome = document.createElement("p")
-  nome.textContent = nome;
-
-  let preco = document.createElement("p");
-  preco.textContent = texto;
-
-  item.appendChild(imagem);
-  item.appendChild(nome);
-  item.appendChild(preco)
-
-  container.appendChild(item);
-}
-
