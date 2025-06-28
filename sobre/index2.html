@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Sobre</title>
 </head>
 <body>
-    
+        <header class="header-inicio">
+                    <div class="conteiner">
+                        <a href="#" target="_blank" rel="external" class="link-a"><i class="bi bi-whatsapp" id="whatsapp-ag"></i></a>
+                        <a href="#" target="_blank" rel="external" class="link-a"><i class="bi bi-instagram" id="instagram"></i></a>
+                    </div>
+    </header>
+                <section class="secao-inicial">
+                    <div class="vazio"></div>
+                    <div class="logo">
+                        <img src="bilingue.svg" alt="bilingue blend" class="bilingue">
+                    </div>
+                    <div class="login">
+                        <a href="login.html" class="link"><i class="bi bi-person-fill"></a></i>
+                        <div id="cart-icon">
+                        <i class="bi bi-cart-fill" id="iconeCarrinho" onclick="apareceCarrinho()"></i>
+                        <span id="cart-item-count"></span>
+                    </div>
+                        
+                     <!--ÍNICIO CARRINHO LATERAL-->
+                    <div id="sideBar">
+                        <div class="car-head">
+                          <h2 id="lat-car">Meu Carrinho</h2>
+                          <i class="bi bi-x-lg" id="fecharCarrinho" onclick="fecharCarrinho()"></i>
+                        </div>
+                        <div id="iten-carrinho"></div>
+                        <div id="botoes">
+                          <button class="btn-carrinho" id="continuar"><a href="./index.html" id="con-a">CONTINUAR COMPRANDO</a></button>
+                          <button class="btn-carrinho"><a href="./carrinho.html" id="final-btn">FINALIZAR COMPRA </a><i class="bi bi-arrow-right-circle-fill"></i></button>
+                        </div> 
+                    </div>
+                    <!--FINAL CARRINHO LATERAL-->
+                </section>
+        <nav>
+                    <div class="menu-cont">
+                        <div class="dentro-itens">
+                            <ul>
+                                <li class="menu-item"><a href="index.html" class="item-a">Início</a></li>
+                                <li class="menu-item"><a href="#" class="item-a">Categoria</a></li>
+                                <li class="menu-item"><a href="#" class="item-a">Produto</a></li>
+                                <li class="menu-item"><a href="#" class="item-a">Sobre</a></li>
+                                <li class="menu-item"><a href="#final" class="item-a">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        </nav>
+                </section>
+
+
+          <section class="sobre-sec">
+                    <div id="img-sobre">
+                        <img src="./src/img-prof.png" alt="">
+                    </div>
+                    <div class="info-prof">
+                        <h1>Sobre <span>nós</span> </h1>
+                        <p>
+Somos Amanda Goularte e Bruna Camarta, professoras <br> apaixonadas por idiomas e pela infância! <br> Formadas em Licenciatura  em <br> Línguas Modernas (Espanhol e Inglês), <br> unimos nossas experiências para ajudar famílias e educadores <br> a cultivarem  o bilinguismo desde os primeiros anos de vida, de forma simples, afetuosa e eficaz.</p>
+                    </div>
+          </section>      
 </body>
 </html>
