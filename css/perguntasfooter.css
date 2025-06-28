@@ -170,6 +170,8 @@ a.item-a{
     justify-content: center;
     align-items: center;
 }
+
+/*INÍCIO CARRINHO LATERAL*/
 #sideBar{
     display: none;
     position: relative;
@@ -240,7 +242,7 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
     cursor: pointer;
 }
 
-##iten-carrinho {
+#iten-carrinho {
   display: flex;
   flex-direction: column; /* itens um abaixo do outro */
   gap: 10px;
@@ -266,6 +268,7 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
   color: #333;
   margin: 0; /* para não dar espaçamento extra dos <p> */
 }
+/*FINAL CARRINHO LATERAL*/
 /*FINAL DO HEADER*/
 
 /*INICIO COMPRA SEGURA*/
