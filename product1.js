@@ -41,7 +41,7 @@ function adicionarAoCarrinhoLateral(nome, imagem, preco){
   let item = document.createElement("div");
   item.classList.add("iten-lateral");
 
-  let img = document.createElement("img")
+  let imagem = document.createElement("img")
   img.src = imagem;
 
   let nome = document.createElement("p")
@@ -50,7 +50,7 @@ function adicionarAoCarrinhoLateral(nome, imagem, preco){
   let preco = document.createElement("p");
   preco.textContent = texto;
 
-  item.appendChild(img);
+  item.appendChild(imagem);
   item.appendChild(nome);
   item.appendChild(preco)
 
