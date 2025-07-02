@@ -5,6 +5,12 @@ function COMPRAR() {
   const carrinho = document.getElementById("cart-item-count");
   carrinho.style.display = "block";
   carrinho.innerText = count;
+
+  let imgElement = document.getElementsByClassName("img-tela");
+  let imgSrc = imgElement.src;
+  let texto = document.getElementById("produto-card").innerText;
+  let preco = document.getElementById("preco-card").innerText;
+
 }
 
 function apareceCarrinho() {
