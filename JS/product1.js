@@ -5,6 +5,9 @@ function COMPRAR() {
   const carrinho = document.getElementById("cart-item-count");
   carrinho.style.display = "block";
   carrinho.innerText = count;
+}
+
+function COMPRAR(){
 
   let imgElement = document.getElementsByClassName("img-tela");
   let imgSrc = imgElement.src;
@@ -18,7 +21,7 @@ function COMPRAR() {
   itensLateral.style.borderBottom = "1px solid #fff"; 
 
   //Cria a imagem
-  let img = documeto.createElement("img");
+  let img = document.createElement("img");
   img.src = imgSrc;
   img.style.width="50px";
   img.style.height="50px";
