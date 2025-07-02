@@ -23,9 +23,20 @@ function COMPRAR() {
   img.style.width="50px";
   img.style.height="50px";
 
+  // Cria o nome do produto
   let textoElemento = document.createElement("p");
   textoElemento.innerText = texto;
+
+  // Cria o preço do produto
+  let precoElemento = document.createElement("p");
+    precoElemento.innerText = preco;
   
+  itensLateral.appendChild(img);
+  itensLateral.appendChild(textoElemento);
+  itensLateral.appendChild(precoElemento);
+
+  document.getElementById("iten-carrinho").appendChild(itensLateral);
+  console.log("oii");
 }
 
 function apareceCarrinho() {
