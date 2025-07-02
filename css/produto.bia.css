@@ -50,6 +50,9 @@ body {
   margin-top: 50px;
 }
 
+.card .img-tela{
+  cursor: pointer;
+}
 #produto-card {
   font-family: "Fredoka", sans-serif;
   font-weight: 600;
