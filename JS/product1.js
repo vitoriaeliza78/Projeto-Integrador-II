@@ -11,6 +11,21 @@ function COMPRAR() {
   let texto = document.getElementById("produto-card").innerText;
   let preco = document.getElementById("preco-card").innerText;
 
+  let itensLateral = document.createElement("div");
+  itensLateral.style.display = "flex";
+  itensLateral.style.alignItems = "center";
+  itensLateral.style.gap = "10px";
+  itensLateral.style.borderBottom = "1px solid #fff"; 
+
+  //Cria a imagem
+  let img = documeto.createElement("img");
+  img.src = imgSrc;
+  img.style.width="50px";
+  img.style.height="50px";
+
+  let textoElemento = document.createElement("p");
+  textoElemento.innerText = texto;
+  
 }
 
 function apareceCarrinho() {
