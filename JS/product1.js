@@ -1,13 +1,14 @@
-let count = 1;
+let count = 0;
 
 function COMPRAR() {
   
   const carrinho = document.getElementById("cart-item-count");
+
+  count += 1;
   carrinho.style.display = "block";
   carrinho.innerText = count;
-  count += 1;
-// itens do carrinho lateral
 
+  // itens do carrinho lateral
   let imgElement = document.querySelector(".img-tela");
   let imgSrc = imgElement.src;
   let texto = document.querySelector(".product_descricao").innerText;
@@ -16,7 +17,7 @@ function COMPRAR() {
   let itensLateral = document.createElement("div");
   itensLateral.style.display = "flex";
   itensLateral.style.alignItems = "center";
-  itensLateral.style.gap = "40px";
+  itensLateral.style.gap = "30px";
   itensLateral.style.borderBottom = "1px solid #fff"; 
 
   //Cria a imagem
@@ -41,9 +42,13 @@ function COMPRAR() {
   iconeApagar.addEventListener("click", function(){
     itensLateral.remove();
 
-    if (document.getElementById("iten-carrinho").children.length === 0) {
-    document.getElementById("botoes").style.display = "none";
-  }
+    count -= 1;
+    carrinho.innerText = count;
+
+    if (count === 0) {
+        document.getElementById("botoes").style.display = "none";
+        carrinho.style.display = "none";
+    }
 });
 
   itensLateral.appendChild(img);

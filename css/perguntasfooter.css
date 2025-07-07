@@ -204,17 +204,16 @@ a.item-a{
                -1px 1px 0 rgb(216, 197, 197),
                1px 1px 0 rgb(216, 197, 197),
 }
-#botoes{
-    display: none;
-    position: fixed;
-}
+
 
 #continuar{
     background-color: #fff;
     color: #000;
     cursor: pointer;
 }
-
+#botoes{
+    display: none;
+}
 #botoes #con-a{
     color: #000;
 
@@ -223,6 +222,7 @@ a.item-a{
     color: #fff;
 }
 #botoes .btn-carrinho{
+    display: block;
     width: 44%;
     border: 0;
     border-radius: 10px;
