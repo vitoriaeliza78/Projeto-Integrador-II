@@ -1,4 +1,4 @@
-let count = 0;
+let count = 1;
 
 function COMPRAR() {
   
@@ -6,19 +6,17 @@ function COMPRAR() {
   carrinho.style.display = "block";
   carrinho.innerText = count;
   count += 1;
-}
-
-function COMPRAR(){
+// itens do carrinho lateral
 
   let imgElement = document.querySelector(".img-tela");
   let imgSrc = imgElement.src;
-  let texto = document.getElementById("produto-card").innerText;
-  let preco = document.getElementById("preco-card").innerText;
+  let texto = document.querySelector(".product_descricao").innerText;
+  let preco = document.querySelector(".descricao_preco").innerText;
 
   let itensLateral = document.createElement("div");
   itensLateral.style.display = "flex";
   itensLateral.style.alignItems = "center";
-  itensLateral.style.gap = "10px";
+  itensLateral.style.gap = "40px";
   itensLateral.style.borderBottom = "1px solid #fff"; 
 
   //Cria a imagem
