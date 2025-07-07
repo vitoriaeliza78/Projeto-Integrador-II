@@ -12,7 +12,7 @@ function COMPRAR() {
   let imgSrc = imgElement.src;
   let texto = document.querySelector(".product_descricao").innerText;
   let preco = document.querySelector(".descricao_preco").innerText;
-
+ 
   let itensLateral = document.createElement("div");
   itensLateral.style.display = "flex";
   itensLateral.style.alignItems = "center";
@@ -33,12 +33,28 @@ function COMPRAR() {
   let precoElemento = document.createElement("p");
     precoElemento.innerText = preco;
   
+  let iconeApagar = document.createElement("i");
+  iconeApagar.className = "bi bi-trash";
+  iconeApagar.style.cursor= "pointer";
+  iconeApagar.style.color="black";
+
+  iconeApagar.addEventListener("click", function(){
+    itensLateral.remove();
+
+    if (document.getElementById("iten-carrinho").children.length === 0) {
+    document.getElementById("botoes").style.display = "none";
+  }
+});
+
   itensLateral.appendChild(img);
   itensLateral.appendChild(textoElemento);
   itensLateral.appendChild(precoElemento);
-
+  itensLateral.appendChild(iconeApagar);
+  
   document.getElementById("iten-carrinho").appendChild(itensLateral);
+  document.getElementById("botoes").style.display = "block";
   console.log("oii");
+
 }
 
 
