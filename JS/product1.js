@@ -62,6 +62,15 @@ function COMPRAR() {
 
 }
 
+function abrirCarrinho() {
+  let botoes = document.getElementById("botoes");
+  if (count === 0) {
+    botoes.style.display = "none";
+  } else {
+    botoes.style.display = "block";
+  }
+  // resto do código pra abrir o carrinho
+}
 
 function apareceCarrinho() {
   let carrinhoLateral = document.getElementById("sideBar")
