@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lily+Script+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0%; padding: 0%; text-decoration: none; list-style: none;
@@ -280,22 +280,68 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
 main #conteiner-main{
     display: flex;
 }
-main #retangulo-rosa{
-    margin-top: 50px;
-    margin-left: 10em;
-    width: 20%;
-    height: 450px;
-    background-color: var(--Rosa);
-    border-radius: 24%;
+section #prof-descript{
+    position: relative;
 }
 
-main #retangulo-amarelo{
-    margin-top: 50px;
-    margin-left: 10em;
+section #retangulo-rosa{
+    position: absolute;
+    margin-top: 40px;
     width: 20%;
-    height: 450px;
+    height: 400px;
+    margin-left: 300px;
+    background-color: var(--Rosa);
+    border-radius: 14%;
+}
+
+section #retangulo-amarelo{
+    position: absolute;
+    margin-top: 70px;
+    width: 20%;
+    height: 400px;
+    margin-left: 550px;
     background-color: var(--Amarelo);
-    border-radius: 24%;
+    border-radius: 14%;
+}
+
+section #quadrado-rosa{
+   position: absolute;
+    margin-top: 40px;
+    width: 20%;
+    height: 300px;
+    margin-left: 950px;
+    background-color: var(--Rosa);
+    border-radius: 14%;
+    align-items: center;
+    justify-items: center;
+}
+
+div#circulo-azul{
+    position: absolute;
+    background-color: var(--Azul);
+    width: 10%;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#quadrado-rosa #circulo-verde{
+    background-color: var(--Verde);
+    width: 10%;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+#prof-descript #boas-vindas{
+    margin-top: 50px;
+    font-family: "Lily Script One", system-ui;
+    color: var(--Amarelo);
+    font-size: 2rem;
+ 
+}
+main #img-vector{
+    width: 90%;
+    height: 90px;
+    margin-top: 500px;
 }
 /*INICIO COMPRA SEGURA*/
 
