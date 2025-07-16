@@ -276,6 +276,27 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
 /*FINAL CARRINHO LATERAL*/
 /*FINAL DO HEADER*/
 
+/*ÍNICIO DO MAIN*/
+main #conteiner-main{
+    display: flex;
+}
+main #retangulo-rosa{
+    margin-top: 50px;
+    margin-left: 10em;
+    width: 20%;
+    height: 450px;
+    background-color: var(--Rosa);
+    border-radius: 24%;
+}
+
+main #retangulo-amarelo{
+    margin-top: 50px;
+    margin-left: 10em;
+    width: 20%;
+    height: 450px;
+    background-color: var(--Amarelo);
+    border-radius: 24%;
+}
 /*INICIO COMPRA SEGURA*/
 
 .amarela .conteiner{
