@@ -277,6 +277,8 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
 /*FINAL DO HEADER*/
 
 /*ÍNICIO DO MAIN*/
+
+
 main #conteiner-main{
     display: flex;
 }
@@ -316,8 +318,11 @@ section #quadrado-rosa{
     justify-items: center;
 }
 
-div#circulo-azul{
-    position: absolute;
+#conteiner-do-circulos{
+
+}
+
+#quadrado-rosa #circulo-azul{
     background-color: var(--Azul);
     width: 10%;
     height: 30px;
@@ -325,12 +330,13 @@ div#circulo-azul{
 }
 
 #quadrado-rosa #circulo-verde{
+    position: absolute;
     background-color: var(--Verde);
     width: 10%;
     height: 30px;
     border-radius: 50%;
-    margin-top: 50px;
 }
+
 #prof-descript #boas-vindas{
     margin-top: 50px;
     font-family: "Lily Script One", system-ui;
@@ -338,6 +344,7 @@ div#circulo-azul{
     font-size: 2rem;
  
 }
+
 main #img-vector{
     width: 90%;
     height: 90px;
