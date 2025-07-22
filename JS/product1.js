@@ -1,18 +1,23 @@
 let count = 0;
 
-function COMPRAR() {
+function COMPRAR(produtoId) {
   
   const carrinho = document.getElementById("cart-item-count");
 
   count += 1;
-  carrinho.style.display = "block";
+  carrinho.style.display = "flex";
   carrinho.innerText = count;
 
+  const produto = document.getElementById(produtoId)
+  console.log(produto);
+
   // itens do carrinho lateral
-  let imgElement = document.querySelector(".img-tela");
+  let imgElement = produto.querySelector(".img-tela");
   let imgSrc = imgElement.src;
-  let texto = document.querySelector(".product_descricao").innerText;
-  let preco = document.querySelector(".descricao_preco").innerText;
+  let texto = produto.querySelector(".product_descricao").innerText;
+  let preco = produto.querySelector(".descricao_preco").innerText;
+
+  console.log("elementos: ", imgSrc, texto, preco);
  
   let itensLateral = document.createElement("div");
   itensLateral.style.display = "flex";
@@ -57,7 +62,7 @@ function COMPRAR() {
   itensLateral.appendChild(iconeApagar);
   
   document.getElementById("iten-carrinho").appendChild(itensLateral);
-  document.getElementById("botoes").style.display = "block";
+  document.getElementById("botoes").style.display = "flex";
   console.log("oii");
 
 }
@@ -67,7 +72,7 @@ function abrirCarrinho() {
   if (count === 0) {
     botoes.style.display = "none";
   } else {
-    botoes.style.display = "block";
+    botoes.style.display = "flex";
   }
   // resto do código pra abrir o carrinho
 }

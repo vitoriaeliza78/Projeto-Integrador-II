@@ -211,9 +211,10 @@ a.item-a{
     color: #000;
     cursor: pointer;
 }
-#botoes{
+
+/* #botoes{
     display: none;
-}
+} */
 #botoes #con-a{
     color: #000;
 
@@ -327,15 +328,15 @@ section #quadrado-rosa{
     justify-items: center;
 }
 
-#conteiner-do-circulos{
-
-}
 
 #quadrado-rosa #circulo-azul{
+    position: absolute;
     background-color: var(--Azul);
     width: 10%;
     height: 30px;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 #quadrado-rosa #circulo-verde{
@@ -343,9 +344,18 @@ section #quadrado-rosa{
     background-color: var(--Verde);
     width: 10%;
     height: 30px;
+    margin-left: 30px;
     border-radius: 50%;
 }
 
+#quadrado-rosa #circulo-lilas{
+    position: absolute;
+    background-color: var(--Roxo);
+    width: 10%;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 50%;
+}
 #prof-descript #boas-vindas{
     margin-top: 50px;
     font-family: "Lily Script One", system-ui;
@@ -354,6 +364,11 @@ section #quadrado-rosa{
  
 }
 
+main #text-prof{
+    font-family: var(--font_poppins);
+    color: #3C3C3C;
+    text-align: center;
+}
 main #img-vector{
     width: 90%;
     height: 90px;

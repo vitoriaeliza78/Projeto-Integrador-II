@@ -32,12 +32,14 @@
                     </div>
                      
                     <!--ÍNICIO CARRINHO LATERAL-->
-                    <div id="sideBar">
-                        <div class="car-head" onclick="abrirCarrinho()">
+                    <div id="sideBar" onclick="abrirCarrinho()">
+                        <div class="car-head">
                           <h2 id="lat-car">Meu Carrinho</h2>
                           <i class="bi bi-x-lg" id="fecharCarrinho" onclick="fecharCarrinho(this)"></i>
                         </div>
-                        <div id="iten-carrinho"></div>
+                        <div>
+                          <div id="iten-carrinho"></div>
+                        </div>
                         <div id="botoes">
                           <button class="btn-carrinho" id="continuar"><a href="./index.html" id="con-a">CONTINUAR COMPRANDO</a></button>
                           <button class="btn-carrinho"><a href="./carrinho.html" id="final-btn">FINALIZAR COMPRA </a><i class="bi bi-arrow-right-circle-fill"></i></button>
@@ -71,7 +73,7 @@
               </div>
               
               <p id="boas-vindas">Olá, Bem-vindo!</p>
-              <p>Nós somos a Amanda e a Bruna,<br>
+              <p id="text-prof">Nós somos a <br>Amanda e a Bruna<br>
               vendemos produtos pedagógicos<br>
               para professores, pais e alunos.</p>
             </div>
@@ -83,64 +85,64 @@
       <h1 class="product">Produtos</h1> 
       <!--PRODUTO 1-->
       <div class="conjunto-cards-1" id="0"> <!--card produto-->
-        <div class="card">
+        <div class="card" id="abajurInfantil">
           <a href="./produtoClicado/produtoclicado.html">
             <img src="./imgs/abajur.jpg" alt="produto1" class="img-tela">
           </a>
           <p id="produto-card" class="product_descricao">Abajur infantil</p>
           <p id="preco-card" class="descricao_preco">R$ 32,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR(this)"/>
+          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('abajurInfantil')" />
         </div>
 
        <!--PRODUTO 2-->
-        <div class="card">
+        <div class="card" id="abelha">
             <a href="./produtoClicado/produtoclicado.html">
               <img src="./imgs/abelha.jpg" alt=""class="img-tela" />
             </a>
           <p id="produto-card" class="product_descricao">Abelha</p>
           <p id="preco-card" class="descricao_preco">R$ 32,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR(this)"/>
+          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('abelha')"/>
         </div>
 
          <!--PRODUTO 3-->
-        <div class="card">
+        <div class="card" id="lanchonete">
           <a href="./produtoClicado/produtoclicado.html">
             <img src="./imgs/brinquedoburguer.jpg" alt="" class="img-tela"/>
           </a>
           <p id="produto-card" class="product_descricao">Brinquedo de lanchonete</p>
           <p id="preco-card" class="descricao_preco">R$ 50,00</p>
-         <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR(this)"/>
+         <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('lanchonete')"/>
         </div>
       </div>
          <!--PRODUTO 4-->
       <div class="conjunto-cards-2">
-        <div class="card">
+        <div class="card" id="lego">
             <a href="./produtoClicado/produtoclicado.html">
               <img src="./imgs/lego.jpg" alt="" class="img-tela"/>
             </a>
           <p id="produto-card" class="product_descricao">Brinquedo Lego</p>
           <p id="preco-card" class="descricao_preco">R$ 35,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR(this)"/>
+          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('lego')"/>
         </div>
 
            <!--PRODUTO 5-->
-        <div class="card">
+        <div class="card" id="ursoDePelucio">
             <a href="./produtoClicado/produtoclicado.html">
               <img src="./imgs/pelucia.jpg" alt="" class="img-tela"/>
             </a>
           <p id="produto-card" class="product_descricao">Urso de pelucio</p>
           <p id="preco-card" class="descricao_preco">R$ 22,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR(this)"/>
+          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('ursoDePelucio')"/>
         </div>
 
          <!--PRODUTO 6-->
-        <div class="card">
+        <div class="card" id="decoracao">
             <a href="./produtoClicado/produtoclicado.html">
               <img src="./imgs/decoracao.jpg" alt="" class="img-tela"/>
             </a>
           <p id="produto-card" class="product_descricao">Decoração infantil</p>
           <p id="preco-card" class="descricao_preco">R$ 58,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR(this)"/>
+          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('decoracao')"/>
         </div>
     </section>
           <div id="mudar-pagina"><i id="arrow-2" class="bi bi-caret-left-square-fill"></i><p>1</p> <p>2</p> <p>3</p> <p>4</p> <p>5</p><i id="arrow-1" class="bi bi-caret-right-square-fill"></i></div>
