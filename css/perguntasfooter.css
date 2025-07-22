@@ -335,8 +335,7 @@ section #quadrado-rosa{
     width: 10%;
     height: 30px;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 #quadrado-rosa #circulo-verde{
@@ -368,6 +367,11 @@ main #text-prof{
     font-family: var(--font_poppins);
     color: #3C3C3C;
     text-align: center;
+}
+
+main span{
+    font-size: 1.5rem;
+    color: #fff0ff;
 }
 main #img-vector{
     width: 90%;
