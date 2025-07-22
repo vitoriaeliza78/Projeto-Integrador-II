@@ -348,7 +348,9 @@ section #quadrado-rosa{
 main #img-vector{
     width: 90%;
     height: 90px;
-    margin-top: 500px;
+    margin-top: 386px;
+    margin-left: 70px;
+    z-index: 8;
 }
 /*INICIO COMPRA SEGURA*/
 
