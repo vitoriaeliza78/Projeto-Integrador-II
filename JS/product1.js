@@ -1,29 +1,31 @@
 let count = 0;
 
 function COMPRAR(produtoId) {
+  let totalProdutos = 0
   
   const carrinho = document.getElementById("cart-item-count");
-
   count += 1;
   carrinho.style.display = "flex";
   carrinho.innerText = count;
 
   const produto = document.getElementById(produtoId)
-  console.log(produto);
 
   // itens do carrinho lateral
   let imgElement = produto.querySelector(".img-tela");
   let imgSrc = imgElement.src;
   let texto = produto.querySelector(".product_descricao").innerText;
   let preco = produto.querySelector(".descricao_preco").innerText;
-
-  console.log("elementos: ", imgSrc, texto, preco);
  
   let itensLateral = document.createElement("div");
   itensLateral.style.display = "flex";
   itensLateral.style.alignItems = "center";
   itensLateral.style.gap = "30px";
   itensLateral.style.borderBottom = "1px solid #fff"; 
+
+  //Exibe o total
+  const total = document.getElementById("total-produtos")
+  totalProdutos = totalProdutos + preco
+  total.innerText = totalProdutos
 
   //Cria a imagem
   let img = document.createElement("img");
@@ -79,7 +81,7 @@ function abrirCarrinho() {
 
 function apareceCarrinho() {
   let carrinhoLateral = document.getElementById("sideBar")
-  carrinhoLateral.style.display = "block";
+  carrinhoLateral.style.display = "flex";
 }
 
 function fecharCarrinho() {

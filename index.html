@@ -34,15 +34,16 @@
                     <!--ÍNICIO CARRINHO LATERAL-->
                     <div id="sideBar" onclick="abrirCarrinho()">
                         <div class="car-head">
-                          <h2 id="lat-car">Meu Carrinho</h2>
-                          <i class="bi bi-x-lg" id="fecharCarrinho" onclick="fecharCarrinho(this)"></i>
-                        </div>
-                        <div>
+                          <div id="header-carrinho">
+                            <h2 id="lat-car">Meu Carrinho</h2>
+                            <i class="bi bi-x-lg" id="fecharCarrinho" onclick="fecharCarrinho(this)"></i>
+                          </div>
+                          <p id="total-produtos"></p>
                           <div id="iten-carrinho"></div>
                         </div>
                         <div id="botoes">
                           <button class="btn-carrinho" id="continuar"><a href="./index.html" id="con-a">CONTINUAR COMPRANDO</a></button>
-                          <button class="btn-carrinho"><a href="./carrinho.html" id="final-btn">FINALIZAR COMPRA </a><i class="bi bi-arrow-right-circle-fill"></i></button>
+                          <button class="btn-carrinho"><a href="#" id="final-btn">FINALIZAR COMPRA </a><i class="bi bi-arrow-right-circle-fill"></i></button>
                         </div> 
                     </div>
                     <!--FINAL CARRINHO LATERAL-->
