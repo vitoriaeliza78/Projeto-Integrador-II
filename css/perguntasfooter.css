@@ -282,6 +282,15 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
 main #conteiner-main{
     display: flex;
 }
+
+main #professoras-index{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 350px;
+    width: 30%;
+    height: 370px;
+    z-index: 3;
+}
 section #prof-descript{
     position: relative;
 }
