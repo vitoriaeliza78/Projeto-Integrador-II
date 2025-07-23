@@ -328,14 +328,19 @@ section #quadrado-rosa{
     justify-items: center;
 }
 
+main #conteiner-do-circulos{
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
 
 #quadrado-rosa #circulo-azul{
     position: absolute;
     background-color: var(--Azul);
     width: 10%;
     height: 30px;
+    margin-right: 50px;
     border-radius: 50%;
-    
 }
 
 #quadrado-rosa #circulo-verde{
@@ -343,7 +348,7 @@ section #quadrado-rosa{
     background-color: var(--Verde);
     width: 10%;
     height: 30px;
-    margin-left: 30px;
+    margin-left: 50px;
     border-radius: 50%;
 }
 
@@ -352,9 +357,9 @@ section #quadrado-rosa{
     background-color: var(--Roxo);
     width: 10%;
     height: 30px;
-    margin-left: 50px;
     border-radius: 50%;
 }
+
 #prof-descript #boas-vindas{
     margin-top: 50px;
     font-family: "Lily Script One", system-ui;
