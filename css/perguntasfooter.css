@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lily+Script+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0%; padding: 0%; text-decoration: none; list-style: none;
@@ -149,6 +149,7 @@ a.item-a{
 }
 
 #cart-icon{
+    position: relative;
     display: flex;
     cursor: pointer;
 }
@@ -168,7 +169,10 @@ a.item-a{
     display: none;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+/*INÍCIO CARRINHO LATERAL*/
 #sideBar{
     display: none;
     position: relative;
@@ -177,7 +181,7 @@ a.item-a{
     top: 0;
     right: 0;
     width: 350px;
-    height: 100%;
+    height: 100vh;
     background-color: var(--Verde);
     box-shadow: -2px 0 10px rgba(0,0,0,0.1);
     padding: 20px;
@@ -188,8 +192,8 @@ a.item-a{
 
 #sideBar .car-head{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .car-head #lat-car{
@@ -200,16 +204,17 @@ a.item-a{
                -1px 1px 0 rgb(216, 197, 197),
                1px 1px 0 rgb(216, 197, 197),
 }
-#botoes{
-    display: flex;
-    gap: 7px;
-}
+
+
 #continuar{
     background-color: #fff;
     color: #000;
     cursor: pointer;
 }
 
+/* #botoes{
+    display: none;
+} */
 #botoes #con-a{
     color: #000;
 
@@ -217,17 +222,18 @@ a.item-a{
 #botoes #final-btn{
     color: #fff;
 }
-button.btn-carrinho{
-    width: 50%;
-    margin-top: 550px;
+#botoes .btn-carrinho{
+    display: block;
+    width: 44%;
     border: 0;
     border-radius: 10px;
     padding: 10px;
-    background-color: #003262;
     color: #fff;
     font-family: var(--font_poppins);
     font-weight: 700;
-    display: none;
+    padding: 10px;
+    flex-shrink: 0;
+    bottom: 0;
 }
 
 
@@ -240,10 +246,11 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
     cursor: pointer;
 }
 
-##iten-carrinho {
+#iten-carrinho {
   display: flex;
   flex-direction: column; /* itens um abaixo do outro */
   gap: 10px;
+  
 }
 
 .item-lateral {
@@ -252,6 +259,7 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
   gap: 10px;
   border-bottom: 1px solid #ccc;
   padding: 8px 0;
+  overflow-y: auto;
 }
 
 .item-lateral img {
@@ -266,8 +274,117 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
   color: #333;
   margin: 0; /* para não dar espaçamento extra dos <p> */
 }
+/*FINAL CARRINHO LATERAL*/
 /*FINAL DO HEADER*/
 
+/*ÍNICIO DO MAIN*/
+
+
+main #conteiner-main{
+    display: flex;
+}
+
+main #professoras-index{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 350px;
+    width: 30%;
+    height: 370px;
+    z-index: 3;
+}
+section #prof-descript{
+    position: relative;
+}
+
+section #retangulo-rosa{
+    position: absolute;
+    margin-top: 40px;
+    width: 20%;
+    height: 400px;
+    margin-left: 300px;
+    background-color: var(--Rosa);
+    border-radius: 14%;
+}
+
+section #retangulo-amarelo{
+    position: absolute;
+    margin-top: 70px;
+    width: 20%;
+    height: 400px;
+    margin-left: 550px;
+    background-color: var(--Amarelo);
+    border-radius: 14%;
+}
+
+section #quadrado-rosa{
+   position: absolute;
+    margin-top: 40px;
+    width: 20%;
+    height: 300px;
+    margin-left: 950px;
+    background-color: var(--Rosa);
+    border-radius: 14%;
+    align-items: center;
+    justify-items: center;
+}
+
+main #conteiner-do-circulos{
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#quadrado-rosa #circulo-azul{
+    position: absolute;
+    background-color: var(--Azul);
+    width: 10%;
+    height: 30px;
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+#quadrado-rosa #circulo-verde{
+    position: absolute;
+    background-color: var(--Verde);
+    width: 10%;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+#quadrado-rosa #circulo-lilas{
+    position: absolute;
+    background-color: var(--Roxo);
+    width: 10%;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#prof-descript #boas-vindas{
+    margin-top: 50px;
+    font-family: "Lily Script One", system-ui;
+    color: var(--Amarelo);
+    font-size: 2rem;
+ 
+}
+
+main #text-prof{
+    font-family: var(--font_poppins);
+    color: #3C3C3C;
+    text-align: center;
+}
+
+main span{
+    font-size: 1.5rem;
+    color: #fff0ff;
+}
+main #img-vector{
+    width: 90%;
+    height: 90px;
+    margin-top: 386px;
+    margin-left: 70px;
+    z-index: 8;
+}
 /*INICIO COMPRA SEGURA*/
 
 .amarela .conteiner{

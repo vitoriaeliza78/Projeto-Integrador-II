@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
-    <link rel="stylesheet" href="./css/perguntasfooter.css">
-    <link rel="stylesheet" href="./css/produto.bia.css">
-    <link rel="stylesheet" href="./sobre/style.css">
-    <script src="JS/product1.js"></script>
-    <title>Bilíngue Blend</title>
+    <link rel="stylesheet" href="../produtoClicado/style.css">
+    <link rel="stylesheet" href="../produtoClicado/src/bilingue.svg">
+    <script src="../JS/product1.js"></script>
+    <title>Produto Clicado</title>
 </head>
 <body link="#FF90A8" alink="">
       <header>
@@ -21,28 +19,25 @@
                 <section class="secao-inicial">
                     <div class="vazio"></div>
                     <div class="logo">
-                        <img src="./imgs/bilingue.svg" alt="bilingue blend" class="bilingue">
+                        <img src="../produtoClicado/src/bilingue.svg" alt="bilingue blend" class="bilingue">
                     </div>
                     <div class="login">
                       <!--Ícone do Carrinho-->
                     <div id="cart-icon">
-                        <i class="bi bi-cart-fill" id="iconeCarrinho" onclick="apareceCarrinho(this)"></i>
+                        <i class="bi bi-cart-fill" id="iconeCarrinho" onclick="apareceCarrinho()"></i>
                         <span id="cart-item-count"></span>
                     </div>
                      
                     <!--ÍNICIO CARRINHO LATERAL-->
-                    <div id="sideBar" onclick="abrirCarrinho()">
+                    <div id="sideBar">
                         <div class="car-head">
-                          <div id="header-carrinho">
-                            <h2 id="lat-car">Meu Carrinho</h2>
-                            <i class="bi bi-x-lg" id="fecharCarrinho" onclick="fecharCarrinho(this)"></i>
-                          </div>
-                          <p id="total-produtos"></p>
-                          <div id="iten-carrinho"></div>
+                          <h2 id="lat-car">Meu Carrinho</h2>
+                          <i class="bi bi-x-lg" id="fecharCarrinho" onclick="fecharCarrinho()"></i>
                         </div>
+                        <div id="iten-carrinho"></div>
                         <div id="botoes">
                           <button class="btn-carrinho" id="continuar"><a href="./index.html" id="con-a">CONTINUAR COMPRANDO</a></button>
-                          <button class="btn-carrinho"><a href="#" id="final-btn">FINALIZAR COMPRA </a><i class="bi bi-arrow-right-circle-fill"></i></button>
+                          <button class="btn-carrinho"><a href="./carrinho.html" id="final-btn">FINALIZAR COMPRA </a><i class="bi bi-arrow-right-circle-fill"></i></button>
                         </div> 
                     </div>
                     <!--FINAL CARRINHO LATERAL-->
@@ -52,101 +47,29 @@
                         <div class="dentro-itens">
                             <ul>
                                 <li class="menu-item" class="lista-a" id="margin-lis"><a href="#" class="item-a">Início</a></li>
+                                <li class="menu-item" class="lista-a"><a href="#" class="item-a">Categoria</a></li>
                                 <li class="menu-item" class="lista-a"><a href="#" class="item-a">Produto</a></li>
-                                <li class="menu-item" class="lista-a"><a href="sobre/sobre.html" class="item-a">Sobre</a></li>
+                                <li class="menu-item" class="lista-a"><a href="#" class="item-a">Sobre</a></li>
                                 <li class="menu-item" class="lista-a"><a href="#final" class="item-a">Contato</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-    <main>
-        <section id="prof-descript">
-          <div id="conteiner-main">
-            <img src="./imgs/professorasbilingue.png" alt="" srcset="" id="professoras-index">
-            <div id="retangulo-rosa"></div>
-            <div id="retangulo-amarelo"></div>
-            <div id="quadrado-rosa">
-              <div id="conteiner-do-circulos">
-                <div id="circulo-azul"></div>
-                <div id="circulo-verde"></div>
-                <div id="circulo-lilas"></div>
-              </div>
-              
-              <p id="boas-vindas">Olá, Bem-vindo!</p>
-              <p id="text-prof">Nós somos a <br><span>Amanda e a Bruna</span><br>
-              vendemos produtos pedagógicos<br>
-              para professores, pais e alunos.</p>
-            </div>
-            <img src="./imgs/Vector.png" alt="" id="img-vector">
-          </div>
-        </section>
-    <section class="container-produtos">
-                  
-      <h1 class="product">Produtos</h1> 
-      <!--PRODUTO 1-->
-      <div class="conjunto-cards-1" id="0"> <!--card produto-->
-        <div class="card" id="abajurInfantil">
-          <a href="./produtoClicado/produtoclicado.html">
-            <img src="./imgs/abajur.jpg" alt="produto1" class="img-tela">
-            <p id="produto-card" class="product_descricao">Abajur infantil</p>
-            <p id="preco-card" class="descricao_preco">R$ 32,00</p>
-          </a>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('abajurInfantil')" />
-        </div>
+                </section>
+          <main>
 
-       <!--PRODUTO 2-->
-        <div class="card" id="abelha">
-            <a href="./produtoClicado/produtoclicado.html">
-              <img src="./imgs/abelha.jpg" alt=""class="img-tela"/>
-              <p id="produto-card" class="product_descricao">Abelha</p>
-              <p id="preco-card" class="descricao_preco">R$ 32,00</p>
-            </a>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('abelha')"/>
-        </div>
+            <section class="info-product">
+                <div id="box-product">
+                    <img src="../produtoClicado/src/1.png" alt="">
+                </div>
 
-         <!--PRODUTO 3-->
-        <div class="card" id="lanchonete">
-          <a href="./produtoClicado/produtoclicado.html">
-            <img src="./imgs/brinquedoburguer.jpg" alt="" class="img-tela"/>
-          </a>
-          <p id="produto-card" class="product_descricao">Brinquedo de lanchonete</p>
-          <p id="preco-card" class="descricao_preco">R$ 50,00</p>
-         <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('lanchonete')"/>
-        </div>
-      </div>
-         <!--PRODUTO 4-->
-      <div class="conjunto-cards-2">
-        <div class="card" id="lego">
-            <a href="./produtoClicado/produtoclicado.html">
-              <img src="./imgs/lego.jpg" alt="" class="img-tela"/>
-            </a>
-          <p id="produto-card" class="product_descricao">Brinquedo Lego</p>
-          <p id="preco-card" class="descricao_preco">R$ 35,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('lego')"/>
-        </div>
+                <div class="info-text">
+                    <h1>Caixa de lapis sortidos</h1>
+                    <p>Descubra a criatividade sem limites com nossa caixa de <br> lápis sortidos! <br> Com cores vibrantes e acabamento suave, esses lápis são <br> ideais para desenhar, colorir, escrever e destacar suas ideias. <br> Perfeitos para estudantes, artistas iniciantes ou amantes da papelaria, <br> eles combinam qualidade e praticidade em um só produto. <br> Seja para uso escolar ou para momentos de relaxamento, essa caixa é <br> o toque de cor que faltava no seu dia!</p>
+                    <input type="button" value="adicionar ao carrinho">
+                </div>
+            </section>
 
-           <!--PRODUTO 5-->
-        <div class="card" id="ursoDePelucio">
-            <a href="./produtoClicado/produtoclicado.html">
-              <img src="./imgs/pelucia.jpg" alt="" class="img-tela"/>
-            </a>
-          <p id="produto-card" class="product_descricao">Urso de pelucio</p>
-          <p id="preco-card" class="descricao_preco">R$ 22,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('ursoDePelucio')"/>
-        </div>
-
-         <!--PRODUTO 6-->
-        <div class="card" id="decoracao">
-            <a href="./produtoClicado/produtoclicado.html">
-              <img src="./imgs/decoracao.jpg" alt="" class="img-tela"/>
-            </a>
-          <p id="produto-card" class="product_descricao">Decoração infantil</p>
-          <p id="preco-card" class="descricao_preco">R$ 58,00</p>
-          <input class="button-comprar" type="button" value="COMPRAR" onclick="COMPRAR('decoracao')"/>
-        </div>
-    </section>
-          <div id="mudar-pagina"><i id="arrow-2" class="bi bi-caret-left-square-fill"></i><p>1</p><i id="arrow-1" class="bi bi-caret-right-square-fill"></i></div>
-     
             <div class="amarela">
               <div class="conteiner">
                   <div class="dowload">
@@ -155,7 +78,7 @@
                   </div>
                   <div class="entrega">
                       <i class="bi bi-bag-check-fill"></i>
-                      <h3 class="seguro">entrega rápida!</h3>
+                      <h3 class="seguro">entrega rápida</h3>
                   </div>
                   <div class="cartao">
                       <i class="bi bi-credit-card"></i>
@@ -173,7 +96,7 @@
                 <div class="pai">
                     <div class="filho-esquerda">
                         <h1>Perguntas Frequentes</h1>
-                        <img src="./imgs/perguntas.png" alt="imagem perguntas Frequentes" id="img-perguntas">
+                        <img src="../produtoClicado/src/perguntas.png" alt="imagem perguntas Frequentes" id="img-perguntas">
                     </div>
                     <div class="filho-direita">
                       <p class="mobile-only">Perguntas Frequentes</p>
@@ -197,7 +120,7 @@
                 <div class="father">
                   <div class="primeiro-bloco">
                     <h2 id="institucional">Institucional</h2>
-                    <a href="./sobre/sobre.html" target="_blank" rel="noopener noreferrer"><p class="texto-1">* Quem sou eu</p></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><p class="texto-1">* Quem sou eu</p></a>
                     <p class="texto-1"><a href="#" class="priv">* Política de privacidade</a></p>
                     <p class="texto-1"><a href="#" class="priv">* Suporte via Whatsapp</a></p>
                     <p class="texto-1"><a href="#" class="priv">* Políticas de Reembolso e</a></p>
@@ -205,7 +128,7 @@
                   </div>
                   <div class="segundo-bloco">
                     <h2 class="pagamento">Formas de Pagamento</h2>
-                    <img src="./imgs/formasdepagmento.png" alt="Formas de pagamento" id="formaspg">
+                    <img src="../produtoClicado/src/formasdepagmento.png" alt="Formas de pagamento" id="formaspg">
                   </div>
                   <div class="terceiro-bloco">
                     <h2 class="rede-social">Redes Sociais</h2>
