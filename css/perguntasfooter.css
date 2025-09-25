@@ -240,7 +240,7 @@ button.btn-carrinho .bi-arrow-right-circle-fill{
     cursor: pointer;
 }
 
-##iten-carrinho {
+#iten-carrinho {
   display: flex;
   flex-direction: column; /* itens um abaixo do outro */
   gap: 10px;
