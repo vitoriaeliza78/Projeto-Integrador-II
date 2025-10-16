@@ -28,14 +28,11 @@ body {
       color: #fdef7f;
     }
 
-.btn-outline-success {
-      border-color: #198754;
-      color: #198754;
-}
+/*CARDS*/
 
-.btn-outline-success:hover {
-      background-color: #198754;
-      color: white;
+
+button.btn-outline-success:hover {
+      background-color: #f0afbd;
 }
 
 .cart-icon {
@@ -46,7 +43,7 @@ body {
     }
 
 .cart-icon:hover {
-      color: hotpink;
+      color: rgb(248, 145, 196);
 }
 
 .card-img-fixa {
