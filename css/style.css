@@ -53,3 +53,12 @@ body {
       height: 230px;         /* todas as imagens terão a mesma altura */
       object-fit: cover;     /* corta a imagem sem distorcer */
 }
+
+a.nav-link{
+  transition: 0.3s; /*tempo que gasta quando o mouse passa por cima*/
+}
+
+a.nav-link:hover {
+    background-color: #ffeb60; /* tom mais vivo no hover */
+    color: white;
+}
