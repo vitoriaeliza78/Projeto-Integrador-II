@@ -11,7 +11,7 @@
     <title>Bilíngue Blend</title>
 </head>
 <body>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white;">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white;">
         <div class="container d-flex justify-content-between align-items-center" >
 
         <!-- Logo -->
@@ -31,7 +31,7 @@
           <!-- Menu central -->
           <ul class="navbar-nav nav-pills mx-auto">
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#" style="background-color: #f8e974;">Home</a>
+              <a class="nav-link active text-dark" aria-current="page" href="#" style="background-color: #ffea4c;">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="#">Sobre</a>
@@ -50,19 +50,54 @@
       <!-- Campo de busca + botão + carrinho -->
       <form class="d-flex align-items-center" role="search">
         <input class="form-control me-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-success" type="submit">Procurar</button>
+        <button class="btn btn-outline-success" type="submit" style="background-color: #FF90A8; border: none; color: white;">Procurar</button>
         <a href="#" class="ms-3">
-          <i class="bi bi-cart" style="font-size: 1.5rem; color: pink;"></i>
+          <i class="bi bi-cart" style="font-size: 1.5rem; color: #FF90A8;"></i>
         </a>
       </form>
-
-    </div>
-  </div>
-</nav>
-
           </div>
         </div>
-</nav>
+      </nav>
+
+      <!--Cards dos produtos-->
+     <div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+    <div class="col">
+      <div class="card h-100 w-60">
+        <img src="./imgs/abajur.jpg" class="card-img-top card-img-fixa" alt="Imagem 1">
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">Este é o primeiro card.</p>
+          <button class="btn btn-warning text-dark fw-semibold rounded-pill align-items-center">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./imgs/abelha.jpg" class="card-img-top card-img-fixa" alt="Imagem 2">
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">Este é o segundo card.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./imgs/brinquedoburguer.jpg" class="card-img-top card-img-fixa" alt="Imagem 3">
+        <div class="card-body">
+          <h5 class="card-title">Card 3</h5>
+          <p class="card-text">Este é o terceiro card.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

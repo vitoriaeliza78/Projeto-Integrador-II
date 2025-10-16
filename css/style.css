@@ -28,23 +28,28 @@ body {
       color: #fdef7f;
     }
 
-    .btn-outline-success {
+.btn-outline-success {
       border-color: #198754;
       color: #198754;
-    }
+}
 
-    .btn-outline-success:hover {
+.btn-outline-success:hover {
       background-color: #198754;
       color: white;
-    }
+}
 
-    .cart-icon {
+.cart-icon {
       color: pink;
       font-size: 1.6rem;
       margin-left: 15px;
       transition: 0.3s;
     }
 
-    .cart-icon:hover {
+.cart-icon:hover {
       color: hotpink;
-    }
+}
+
+.card-img-fixa {
+      height: 230px;         /* todas as imagens terão a mesma altura */
+      object-fit: cover;     /* corta a imagem sem distorcer */
+}
