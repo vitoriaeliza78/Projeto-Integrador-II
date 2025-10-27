@@ -1,4 +1,5 @@
-🌍 Vitrine Bilíngue – Materiais Pedagógicos para o Ensino de Inglês e Espanhol
+🌍 Vitrine Bilíngue – Materiais Pedagógicos para o Ensino de Inglês e Espanhol<br>
+
 🧠 Sobre o Projeto
 
 Este projeto foi desenvolvido como parte das atividades do 3º semestre do curso de Sistemas para Internet (IFB).
